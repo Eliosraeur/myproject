@@ -1,0 +1,217 @@
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contain
+{
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+}
+.row-mg
+{
+    height: 320px;
+}
+.row-mg img
+{
+    width: 207px;
+    height: 320px;
+}
+.row-mg h2
+{
+    padding-left: 30px;
+}
+.row
+{
+    margin-top: 10px;
+}
+.row p
+{
+    text-align: justify;
+}
+.col-img
+{
+    width: 207px;
+    height: 320px;
+}
+.col-inf
+{
+    position: relative;
+    width:calc(100% - 207px);
+    height: 320px;
+    display: flex inline-block;
+    flex-direction: column;
+}
+.manga-info
+{
+    padding-left: 30px;
+    list-style: none;
+}
+.manga-info li
+{
+    padding: 3px 0;
+}
+.manga-info a
+{
+    text-decoration: none;
+    color: black;
+}
+.manga-info a:hover
+{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(247, 222, 0);
+}
+.rf 
+{
+    position:absolute;
+    bottom: 18px;
+    left: 40px;
+}
+.readfirst 
+{
+    text-decoration: none;
+    padding: 12px 30px;
+    background: #0a0354;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+}
+.readfirst:hover
+{
+    color: white;
+    background: #100679;
+}
+.list-group
+{
+    margin: 0 10px;
+    width: 98.5%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.list-group a:hover
+{
+    color: black;
+    font-weight: 600;
+    background-color: #f3f3f3;
+}
+.long
+{
+    overflow: scroll;
+    max-height: 380px;
+}
+.long::-webkit-scrollbar
+{
+    width: 10px;
+    overflow: scroll;
+    max-height: 380px; 
+}
+.long::-webkit-scrollbar-thumb
+{
+    background: #080344;
+    border-radius: 5px;
+}
+.long::-webkit-scrollbar-thumb:hover
+{
+    background: #100679;
+}
+/*-----COMMENTS------*/
+section.cmtBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    height: fit-content;
+    margin-bottom: 60px;
+}
+.cmtBox .container {
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    width: 100%;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.cmtBox .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.cmtBox .comments {
+    width: 100%;
+    display: none;
+}
+.cmtBox .comments div {
+    color: black;
+    background: #f3f3f3;
+    align-items: center;
+    margin-top: 20px;
+    padding: 25px 35px;
+    display: flex;
+    position: relative;
+    text-align: justify;
+    border-radius: 10px;
+}
+.cmtBox .comments div span.datetime {
+    font-size: 12px;
+    color: #555;
+    padding-left: 30px;
+}
+.cmtBox .comments div span.cmtText{
+    width: 70%;
+}
+.cmtBox .comments div i {
+
+    font-size: 20px;
+    color: #24243e;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.cmtBox .comments div i:hover {
+    color: #080344;
+    transform: translateY(-50%) scale(1.1);
+}
+.cmtBox .box input {
+    width: 70%;
+    background: white;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 15px;
+}
+.cmtBox .box input:focus{
+    outline: none;
+}
+.cmtBox .box button {
+    width: 25%;
+    background: #09064d;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: all .5s;
+}
+.cmtBox .box button:hover {
+    background: #100679;
+}
+.cmtBox .hide
+{
+    position: absolute;
+    right: 120px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+}
+.cmtBox .hide:hover
+{
+    transform: scale(1.1);
+}
